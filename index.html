@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The 2026 Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevylox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #1a1a1a; color: #00ff00; font-family: monospace; padding: 50px; }
-        h1 { border-bottom: 2px solid #00ff00; }
-        .status { color: #ffcc00; }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0f0f0f; /* Deep dark background */
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* The Logo from URL */
+        .logo {
+            width: 120px; /* Adjust size here */
+            height: 120px;
+            border-radius: 50%; /* Makes it circular if it's a square image */
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            letter-spacing: -1px;
+            margin: 0;
+            background: linear-gradient(to right, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-weight: 300;
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    <h1>Online</h1>
-    <p>Chillean</p>
-    <p class="status">Current Objective: Surmounting June 15th</p>
-    <hr>
-    <p>The house is quiet. The lemonade is cold. The mods are loading.</p>
+
+    <div class="container">
+        <img src="https://media.discordapp.net/attachments/1344031613436035093/1497661455816724611/Screenshot_2026-04-25_211124-removebg-preview.png?ex=69ee556c&is=69ed03ec&hm=71ba665b8cf38977da56c06d9a8bdb5eec17bb3c3267bfb2bfae3944d80a0cb0&=&format=webp&quality=lossless&width=194&height=155" alt="Logo" class="logo">
+        <h1>Nevylox</h1>
+        <div class="subtitle">System Online</div>
+    </div>
+
 </body>
 </html>
